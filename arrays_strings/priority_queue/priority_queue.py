@@ -35,7 +35,7 @@ class PriorityQueue(object):
 
     def decrease_key(self, obj, new_key):
         for node in self.array:
-            if node.obj is obj:
+            if node.obj == obj:
                 node.key = new_key
                 return node
         return None
